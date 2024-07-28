@@ -10,13 +10,23 @@ FlightStatus is a project that helps users to get real-time updates on flight st
 - Modern UI
 
 ## Technologies Used
-- React-js
-- Node.js
-- Express.js
-- MongoDB
-- React.js
-- Nodemailer
-- JWT (JSON Web Tokens)
+
+- **Frontend:**
+  - React.js
+  - Bootstrap
+  - HTML
+  - Css
+
+- **Backend:**
+  - Node.js
+  - Express.js
+  - Mongoose
+
+  **Database**
+   - MongoDB
+  
+  **Notifications**
+  - Nodemailer
 
 ## Setup Instructions
 

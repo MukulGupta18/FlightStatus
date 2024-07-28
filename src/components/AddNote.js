@@ -5,12 +5,12 @@ export const AddNote = (props) => {
   const context = useContext(noteContext);
   const { addNote } = context;
 
-  const [note, setNote] = useState({email: "mgofficial20@gmail.com", title: "", description: "", tag: ""});
+  const [note, setNote] = useState({title: "", description: "", tag: ""});
 
   const handleClick = (e) => {
     e.preventDefault();
-    addNote(note.email, note.title, note.description, note.tag);
-    setNote({email: "mgofficial20@gmail.com", title: "", description: "", tag: ""});
+    addNote( note.title, note.description, note.tag);
+    setNote({ title: "", description: "", tag: ""});
     props.showAlert("Added Successfully", "success");
 
   };
@@ -24,10 +24,7 @@ export const AddNote = (props) => {
       <div className="container my-3">
         <h2>Add Flight Details Manualy</h2>
         <form className="my-3">
-        <div className="mb-3">
-            <label htmlFor="email" className="form-label">email</label>
-            <input type="text" className="form-control" id="email" name="email" aria-describedby="emailHelp" value={note.title} onChange={onChange} />
-          </div>
+
           <div className="mb-3">
             <label htmlFor="title" className="form-label">Id</label>
             <input type="text" className="form-control" id="title" name="title" value={note.title} onChange={onChange} />

@@ -8,11 +8,6 @@ const NotesSchema = new Schema({
         ref: 'user'
     },
     
-    email: {
-        type: String,
-        required: true
-
-    },
 
     title: {
         type: String,

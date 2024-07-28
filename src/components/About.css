@@ -1,0 +1,74 @@
+/* src/components/About.css */
+
+/* Global animation keyframes */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* About Page Styles */
+  .about-container {
+    padding: 2rem;
+    color: #ffffff;
+    background-color: #001f3f;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .about-features, .about-indigo {
+    margin-top: 2rem;
+  }
+  
+  .about-features h2, .about-indigo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .slide-in-top {
+    animation: slideInTop 1.5s ease-in-out;
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1.5s ease-in-out;
+  }
+  

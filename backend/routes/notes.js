@@ -62,10 +62,10 @@ router.put('/updatenote/:id', fetchuser, async (req, res) => {
         if (user) {
             // Send email and handle errors
             try {
-                await sendEmail(user.email, 'Flight Details Update', "Dear - Your flight 6E 2342 is delayed. New departure time: 2024-07-26T17:00:00Z. Departure gate: C3");
+                await sendEmail(user.email, 'Flight Details Update', "Dear - Your flight 6E 2342 is delayed. New departure time: 2024-07-26T17:00:00Z. Departure gate: C3, Arrival gate: 7A, Scheduled arrivale: 2024-07-26T17:17:00Z", );
                 console.log('Email sent successfully');
             } catch (err) {
-                console.error('Failed to send email:', err);
+                console.error('Failed to send email:', err); 
             }
         }
 

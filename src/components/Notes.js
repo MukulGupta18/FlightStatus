@@ -22,7 +22,7 @@ const Notes = (props) => {
 
   const ref = useRef(null);
   const refClose = useRef(null);
-  const [note, setNote] = useState({ id: "", etitle: "", edescription: "", etag: "" });
+  const [note, setNote] = useState({ id: "", etitle: "", edescription: "", etag: "", eArrival_gate: "", eScheduled_departure: "", eScheduled_arrival: "" });
 
   const updateNote = (currentNote) => {
     ref.current.click();
@@ -30,7 +30,7 @@ const Notes = (props) => {
   };
 
   const handleClick = (e) => {
-    editNote(note.id, note.etitle, note.edescription, note.etag);
+    editNote(note.id, note.etitle, note.edescription, note.etag, note.eArrival_gate, note.eScheduled_departure, note.eScheduled_arrival );
     refClose.current.click();
     props.showAlert("Updated Successfully", "success");
   };
@@ -51,7 +51,7 @@ const Notes = (props) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">Edit Note</h1>
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Edit</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -67,6 +67,18 @@ const Notes = (props) => {
                 <div className="mb-3">
                   <label htmlFor="desc" className="form-label">Departure gate</label>
                   <input type="text" className="form-control" id="etag" name="etag" value={note.etag} onChange={onChange} />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="desc" className="form-label">Arrival gate</label>
+                  <input type="text" className="form-control" id="eArrival_gate" name="eArrival_gate" value={note.eArrival_gate} onChange={onChange} />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="desc" className="form-label">Scheduled departure</label>
+                  <input type="text" className="form-control" id="eScheduled_departure" name="eScheduled_departure" value={note.eScheduled_departure} onChange={onChange} />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="desc" className="form-label">Scheduled arrivale</label>
+                  <input type="text" className="form-control" id="eScheduled_arrival" name="eScheduled_arrival" value={note.eScheduled_arrival} onChange={onChange} />
                 </div>
               </form>
             </div>

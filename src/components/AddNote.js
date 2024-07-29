@@ -26,14 +26,14 @@ export const AddNote = (props) => {
         <form className="my-3">
 
           <div className="mb-3">
-            <label htmlFor="title" className="form-label">Id</label>
+            <label htmlFor="title" style={{ color: 'white', padding: '5px', borderRadius: '3px' }} className="form-label">Id</label>
             <input type="text" className="form-control" id="title" name="title" value={note.title} onChange={onChange} />
           </div>
           <div className="mb-3">
-            <label htmlFor="description" className="form-label"> Status </label>
+            <label htmlFor="description" style={{ color: 'white', padding: '5px', borderRadius: '3px' }} className="form-label"> Status </label>
             <input type="text" className="form-control" id="description" name="description" value={note.description} onChange={onChange} /> </div>
           <div className="mb-3">
-            <label htmlFor="desc" className="form-label"> Departure gate </label>
+            <label htmlFor="desc" style={{ color: 'white', padding: '5px', borderRadius: '3px' }} className="form-label"> Departure gate </label>
             <input type="text" className="form-control" id="tag" name="tag" value={note.tag} onChange={onChange} />
           </div>
           <button disabled={note.title.length<2 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick} > AddNote </button>

@@ -28,6 +28,14 @@ FlightStatus is a project that helps users to get real-time updates on flight st
   **Notifications**
   - Nodemailer
 
+## ScreenShot
+<p align="center">The front UI of the Flight Status project features a clean, responsive design that provides admin with an intuitive and accessible way to view and manage flight information.<img src="./public/images/IndexUi.png" height=400px /></p>
+<p align="center"><img src="./public/images/Edit.png" height=400px /></p>
+<p align="center"><img src="./public/images/Database.png" height=400px /></p>
+<p align="center"><img src="./public/images/Mail.png" height=400px /></p>
+
+
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -112,9 +120,6 @@ FlightStatus is a project that helps users to get real-time updates on flight st
 ## Environment Variables
 
 Create a `.env` file in both the `backend` and `frontend` directories with the following content:
-
-<p align="center"><img src="./public/images/Database.png" height=400px /></p>
-<p align="center"><img src="ToDo (View2).png" height=400px /></p>
 
 ### Backend `.env` file
 

@@ -29,12 +29,14 @@ FlightStatus is a project that helps users to get real-time updates on flight st
   - Nodemailer
 
 ## ScreenShot
-<p align="center">The front UI of the Flight Status project features a clean, responsive design that provides admin with an intuitive and accessible way to view and manage flight information.<img src="./public/images/IndexUi.png" height=400px /></p>
-<p align="center"><img src="./public/images/Edit.png" height=400px /></p>
-<p align="center"><img src="./public/images/Database.png" height=400px /></p>
-<p align="center"><img src="./public/images/Mail.png" height=400px /></p>
-
-
+<p align="center">1. The front UI of the Flight Status project features a clean, responsive design that provides admin with an intuitive and accessible way to view and manage flight information.
+<img src="./public/images/IndexUi.png" height=400px /></p>
+<p align="center">2. The update page allows users to easily modify flight details through a user-friendly interface.
+<img src="./public/images/Edit.png" height=400px /></p>
+<p align="center">3. The database stores and manages flight information efficiently, ensuring data integrity and quick access.
+<img src="./public/images/Database.png" height=400px /></p>
+<p align="center">The system sends automated email notifications for updates to ensure timely communication.
+<img src="./public/images/Mail.png" height=400px /></p>
 
 ## Setup Instructions
 

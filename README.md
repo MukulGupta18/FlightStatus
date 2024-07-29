@@ -23,7 +23,7 @@ FlightStatus is a project that helps users to get real-time updates on flight st
   - Mongoose
 
   **Database**
-   - MongoDB
+   - MongoDB 
   
   **Notifications**
   - Nodemailer
@@ -119,3 +119,10 @@ Create a `.env` file in both the `backend` and `frontend` directories with the f
 MONGO_URI=your_mongodb_connection_string
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_email_password
+
+
+## Screenshots
+
+### Flight Details
+![Flight Details] (./public/images/Database.png)
+

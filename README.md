@@ -113,6 +113,9 @@ FlightStatus is a project that helps users to get real-time updates on flight st
 
 Create a `.env` file in both the `backend` and `frontend` directories with the following content:
 
+<p align="center"><img src="./public/images/Database.png" height=400px /></p>
+<p align="center"><img src="ToDo (View2).png" height=400px /></p>
+
 ### Backend `.env` file
 
 ```env

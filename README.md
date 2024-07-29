@@ -106,19 +106,6 @@ FlightStatus is a project that helps users to get real-time updates on flight st
 
 3. **Open your browser and go to `http://localhost:3000`**
 
-## Technologies Used
-
-- **Frontend:**
-  - React.js
-  - Bootstrap
-
-- **Backend:**
-  - Node.js
-  - Express.js
-  - MongoDB
-  - Mongoose
-  - Nodemailer
-
 ## Environment Variables
 
 Create a `.env` file in both the `backend` and `frontend` directories with the following content:

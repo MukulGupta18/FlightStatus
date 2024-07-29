@@ -124,5 +124,5 @@ EMAIL_PASS=your_email_password
 ## Screenshots
 
 ### Flight Details
-![Flight Details] (./public/images/Database.png)
+![Flight Details] (./public/images/Database.png) ![alt text](image.png)
 

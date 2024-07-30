@@ -1,19 +1,18 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config(); // Import and configure dotenv
 
-// Create a transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // You can use another email service provider
+    service: 'gmail', 
     auth: {
-        user: "mukul.22scse2030209@galgotiasuniversity.edu.in", // Use the email from .env file
-        pass: "Muku1gupt@ " // Use the password from .env file
+        user: "EMAIL_USER",
+        pass: "EMAIL_PASS " 
     }
 });
 
 // Function to send an email
 const sendEmail = (to, subject, text) => {
     const mailOptions = {
-        from: "mukul.22scse2030209@galgotiasuniversity.edu.in", // Use the email from .env file
+        from: "EMAIL_USER", 
         to: "mgofficial20@gmail.com",
         subject: "Update",
         text: text
